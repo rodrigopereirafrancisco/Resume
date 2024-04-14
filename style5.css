@@ -1,0 +1,25 @@
+h1 {
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 3px 3px 5px #B0AEAE;
+  background-color: #FFB534;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #3F497F;
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+  }
+
+h3 {
+  font-size: 15px;
+  text-align: center;
+  color: #3F497F;
+  font-family: Verdana, sans-serif;
+  }
+
+h4 {
+  font-size: 20px;
+}
