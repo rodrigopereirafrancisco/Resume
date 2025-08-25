@@ -1,41 +1,148 @@
+/* GENERAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #e8eff6, #b0c4de); /* Soft blue gradient */
+  color: #333;  /* Dark text color for better readability */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background-color: #2f3b55; /* Dark charcoal/navy for elegance */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  color: #ffffff; /* White text for contrast */
+  text-shadow: 2px 2px 5px #000;
+}
+
+header h2, header h3 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #d1d8e3; /* Light gray for readability */
+}
+
+/* NAVIGATION BUTTONS */
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
 .button {
-    display: inline-block;
-    width: 115px;
-    height: 25px;
-    background: #9370DB;
-    padding: 20px;
-    text-align: center;
-    border-radius: 30px;
-    color: #FFFFFF;
-    font-weight: bold;
-    line-height: 30px;
-    cursor: pointer;
-    text-decoration: none;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background: #4b84d0; /* Royal Blue for professionalism */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-h1 {
+.button:hover {
+  background: #4067c2; /* Slightly darker blue on hover */
+}
+
+/* MAIN CONTENT */
+.main-content {
   text-align: center;
-  color: #000000;
-  font-size: 40px;
-  text-shadow: 3px 3px 5px #C9C6C5;
+  margin-top: 40px;
+  padding: 40px 20px;
 }
 
-h2 {
+.resume-download {
+  font-size: 18px;
+  color: #ffffff;
+  background: #3b4c75;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s;
+  display: inline-block;
+  margin-bottom: 30px; /* Space before next content */
+}
+
+.resume-download:hover {
+  background: #2f3b55;
+}
+
+/* Call to Action Section */
+.cta-container {
+  background-color: #f1f4f9; /* Light background for contrast */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.cta-container h4 {
+  font-size: 20px;
+  color: #333;
+}
+
+.cta-container p {
+  font-size: 16px;
+  color: #666;
+}
+
+.cta-container a {
+  color: #4b84d0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cta-container a:hover {
+  color: #4067c2;
+}
+
+/* FOOTER */
+footer {
+  margin-top: auto;
+  background-color: #2f3b55; /* Dark charcoal/navy background */
   text-align: center;
-  font-size: 25px;
+  padding: 20px;
+  font-size: 14px;
+  color: #d1d8e3; /* Light gray text */
 }
 
-a {
-color: #4B0082;
-}
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 28px;
+  }
 
-h4 {
-  font-size: 20px;
-  color: #000000;
-}
+  header h2, header h3 {
+    font-size: 16px;
+  }
 
-h5 {
-  font-size: 20px;
-  color: #000000;
+  .button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .resume-download {
+    font-size: 16px;
+  }
+
+  .cta-container h4 {
+    font-size: 18px;
+  }
+
+  .cta-container p {
+    font-size: 14px;
+  }
 }
