@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+*{box-sizing:border-box}body{font-family:Inter,sans-serif;margin:0;background:#f5f7fb;color:#1f2937}
+header{background:linear-gradient(135deg,#0f172a,#2563eb);color:white;padding:3rem 1rem;text-align:center}
+header h1{font-size:2.4rem;margin:.2rem} nav{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;padding:1rem;background:white;position:sticky;top:0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+nav a{padding:.7rem 1rem;border-radius:999px;text-decoration:none;color:#334155;background:#eef2ff}
+.content,.main-content,main{max-width:900px;margin:2rem auto;background:white;padding:2rem;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.08);line-height:1.8}
+a.button,.resume-download{background:#2563eb;color:white!important;padding:.8rem 1rem;border-radius:10px;text-decoration:none}
+h1,h2,h3{margin-top:0} p{margin:.8rem 0}
+
+
+/* Global footer alignment and spacing */
+footer{
+  width:100%;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:.25rem;
+  padding:1.5rem 1rem;
+  margin:2rem auto 0;
+  color:#64748b;
+}
+footer p{margin:.2rem 0;}
+
+@media (max-width:640px){
+  footer{padding:1.25rem 1rem;}
+}
+
+/* Center resume CTA block */
+.resume-download, .cta-section, .download-section, .intro-text {
+ text-align:center;
+ margin-left:auto;
+ margin-right:auto;
+}
+.resume-download p, .cta-section p, .download-section p {text-align:center;}
+
+/* Force center homepage CTA block */
+.resume-download,
+.download-section,
+.cta-section,
+.hero-content{
+ display:flex !important;
+ flex-direction:column !important;
+ align-items:center !important;
+ justify-content:center !important;
+ text-align:center !important;
+ width:100% !important;
+}
+.resume-download *,.download-section *,.cta-section *,.hero-content *{
+ text-align:center !important;
+}
