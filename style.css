@@ -272,10 +272,11 @@ main.main-content > p{text-align:center;margin-bottom:2rem}
 /* ==========================================================================
    Tag / chip groups (Core Skills, Tools & Technologies)
    ========================================================================== */
-.tag-grid{
-  display:flex;
-  flex-wrap:wrap;
-  gap:.6rem;
+.tag-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* space between each skill box */
+}
 }
 .tag{
   font-family:var(--font-mono);
